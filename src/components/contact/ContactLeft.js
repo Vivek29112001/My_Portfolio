@@ -23,7 +23,7 @@ const ContactLeft = () => {
           🌟 Excellent collaborator and communicator with cross-functional teams.<br></br>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Phone: <span className="text-lightText">+961 7535830482</span>
+          Phone: <span className="text-lightText">+91 7535830482</span>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
           Email: <span className="text-lightText">vivek15292001@gmail.com</span>
