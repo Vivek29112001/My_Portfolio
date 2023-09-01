@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaGithub, FaPython,FaHtml5, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { FaGithub, FaPython,FaHtml5, FaLinkedinIn, FaReact , FaJs, FaCss3, FaNodeJs } from "react-icons/fa";
+// import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -30,13 +30,19 @@ const Media = () => {
               <FaReact />
             </span>
             <span className="bannerIcon">
+              <FaJs />
+            </span>
+            <span className="bannerIcon">
               <FaPython/>
             </span>
             <span className="bannerIcon">
               <FaHtml5 />
             </span>
             <span className="bannerIcon">
-              <SiTailwindcss />
+              <FaCss3 />
+            </span>
+            <span className="bannerIcon">
+              <FaNodeJs />
             </span>
           </div>
         </div>
