@@ -11,6 +11,14 @@ const Certificate = () => {
     >
       <div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <ResumeCard
+            title="Advance Front-End Web Development with React - Full Stack . "
+            subTitle="Full Stack."
+            result="Coding Ninjas"
+            des="🚀 Excited to share my Certificate of Excellence in Advanced Front End with React JS - Full Stack! 🌐 Scored 93.5% based on project and task evaluations.
+             🏆 Let's connect for innovative collaborations! 🔗 #ReactJS #FullStack #TechExcellence
+            This certificate signifies proficiency in Advance Front-End Web Development with React and practical application through the completion of major-project and various projects ."
+          />
           <ResumeCard
             title="Front-End. "
             subTitle="MERN Stack."
@@ -44,12 +52,7 @@ const Certificate = () => {
             Includes Various Tasks/Projects
             Comprehensive Learning Experience"
           />
-          {/* <ResumeCard
-          title="Java Script ."
-          subTitle="Zero To Master."
-          result="Udemy"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
-        /> */}
+          
         </div>
       </div>
       <div>
