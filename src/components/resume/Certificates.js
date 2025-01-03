@@ -63,7 +63,13 @@ const Certificate = () => {
             subTitle="Programming."
             result="Coding Ninjas"
             des="Python programming with DSA (Data Structures and Algorithms) completion and excellence certificate.
-            Lots of questions and concepts covered.  The course likely covers various topics and concepts related to Python and DSA, and upon successful completion, you receive an excellence certificate. Additionally, there are numerous questions and concepts included in the course."
+            // Lots of questions and concepts covered.  The course likely covers various topics and concepts related to Python and DSA, and upon successful completion, you receive an excellence certificate. Additionally, there are numerous questions and concepts included in the course."
+          />
+          <ResumeCard
+            title="Agile Project Management"
+            subTitle="Project Management."
+            result="Google Certificate"
+            des="Agile Project Management certification from Google with a 90% score! 🌐 Equipped with the latest methodologies"
           />
           <ResumeCard
             title="Crash course on python ."

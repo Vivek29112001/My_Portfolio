@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaPython,FaHtml5, FaLinkedinIn, FaReact , FaJs, FaCss3, FaNodeJs } from "react-icons/fa";
+import { FaGithub, FaPython,FaHtml5, FaLinkedinIn, FaReact ,FaJava, FaJs, FaCss3, FaNodeJs } from "react-icons/fa";
 // import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 const Media = () => {
   return (
@@ -30,12 +30,17 @@ const Media = () => {
               <FaReact />
             </span>
             <span className="bannerIcon">
+              <FaJava />
+            </span>
+            <span className="bannerIcon">
               <FaJs />
             </span>
             <span className="bannerIcon">
               <FaPython/>
             </span>
-            <span className="bannerIcon">
+          </div>
+          <div className="flex gap-4">
+          <span className="bannerIcon">
               <FaHtml5 />
             </span>
             <span className="bannerIcon">

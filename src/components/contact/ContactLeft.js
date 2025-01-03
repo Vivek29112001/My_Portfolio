@@ -18,12 +18,12 @@ const ContactLeft = () => {
         <p className="text-base text-gray-400 tracking-wide">
           Why Hire Me?<br></br>
           🌟 Proficient in creating responsive web apps using cutting-edge technologies.<br></br>
-          🌟 Skilled in JAvascript and its FrameWork React.<br></br>
-          🌟 Skilled in implementing RESTful APIs and server-side operations with Node.js and Express.js.<br></br>
+          🌟 Skilled in Javascript and its FrameWork React.<br></br>
+          🌟 Skilled in implementing RESTFULL APIs and server-side operations with Node.js and Express.js.<br></br>
           🌟 Excellent collaborator and communicator with cross-functional teams.<br></br>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Phone: <span className="text-lightText">+91 7535830482</span>
+          Phone: <span className="text-lightText">+91 7535830482 or +91 8356092683</span>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
           Email: <span className="text-lightText">vivek15292001@gmail.com</span>

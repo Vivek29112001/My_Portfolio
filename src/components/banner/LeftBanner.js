@@ -3,13 +3,13 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Media from './Media';
 
 const LeftBanner = () => {
-    const [text] = useTypewriter({
-      words: ["Python.","Front-End.", "Mern Stack.","React.","Full Stack .", "Web-Developer.", "Javascript."],
-      loop: true,
-      typeSpeed: 20,
-      deleteSpeed: 10,
-      delaySpeed: 2000,
-    });
+  const [text] = useTypewriter({
+    words: ["Javascript.", "React.", "Front-End.", "Mern Stack.", "Full Stack .", "Web-Developer.", "Python.", "TypeScript."],
+    loop: true,
+    typeSpeed: 20,
+    deleteSpeed: 10,
+    delaySpeed: 2000,
+  });
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
@@ -26,11 +26,14 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-        I am a passionate and aspiring front-end developer with a keen interest in Python, MERN stack, and React. As a fresher in the world of tech, I am excited to embark on a journey of continuous learning and professional growth.
+          {/* I am a passionate and aspiring front-end developer with a keen interest in Python, MERN stack, and React. As a fresher in the world of tech, I am excited to embark on a journey of continuous learning and professional growth. */}
+          Software Engineer skilled in MERN stack development with experience in mobile and web applications, including work
+          at Jio Platforms and Coding Ninjas. Proven ability to enhance user engagement through responsive, user-focused
+          applications. Certified in advanced web development and React, with strong collaborative and teaching skills
         </p>
       </div>
-     {/* Media */}
-     <Media />
+      {/* Media */}
+      <Media />
     </div>
   );
 }
