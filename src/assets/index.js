@@ -1,6 +1,8 @@
 import logo from "./images/logo.jpg";
 import bannerImg from "./images/bannerImg.png";
 import projectOne from "./images/projects/projectOne.jpg";
+import jiosaavan from "./images/projects/Jio_saavn.jpg";
+import JioCenima from "./images/projects/jio_cenima.png"
 import projectTwo from "./images/projects/projectTwo.jpg";
 import projectThree from "./images/projects/projectThree.png";
 import projectFour from "./images/projects/projectFour.jpg";
@@ -14,6 +16,8 @@ export {
   logo,
   bannerImg,
   projectOne,
+  jiosaavan,
+  JioCenima,
   projectTwo,
   projectThree,
   projectFour,

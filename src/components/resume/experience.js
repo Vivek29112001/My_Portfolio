@@ -16,10 +16,10 @@ const Experience = () => {
         {/*  */}
         <div className="mt-6 lgl:mt-14 w-full h-[auto] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title=" Associate QA Engineer  "
+            title=" Software Engineer  "
             subTitle="Jio Platforms Limited (JPL)"
             result="January 2024 - Present"
-            des="Test and develop mobile and web applications including MyJio, JioSaavn, JioCinema, JioSafe,
+            des="Develop mobile and web applications including MyJio, JioSaavn, JioCinema, JioSafe,
  Jiocinema, and PeopleFirst. 
 Leverage JavaScript, React, and Python to enhance user experience. Ensure application quality
  and performance through rigorous testing and innovative solutions. 

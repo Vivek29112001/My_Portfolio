@@ -7,7 +7,7 @@ export const featuresData = [
     id: 2,
     icon: <AiFillAppstore />,
     title: "Web Development",
-    des: "Good Knowledge in HTML, CSS, JavaScript, and responsive web design principles. Familiarity with front-end frameworks such as React .  Knowledge of back-end technologies like Node.js and Express.js. Solid understanding of web development concepts, including DOM manipulation.",
+    des: "Proficient in HTML, CSS, JavaScript, React, Node.js, and Express.js. Strong in JavaScript from basics to advanced, with knowledge of V8 engine internals like call stack, memory management, and event loop. Experienced in building responsive, dynamic web applications with a focus on performance, DOM manipulation, and seamless client-server integration.",
   },
   {
     id: 3,
@@ -19,7 +19,7 @@ export const featuresData = [
     id: 5,
     icon: <FaMobile />,
     title: "Front-End ",
-    des: "HTML5, CSS3, JavaScript Responsive Web Design Version Control ,CSS Preprocessors, Front-end Frameworks Bootstrap",
+    des: "Proficient in HTML5, CSS3, JavaScript, Responsive Web Design, Version Control, CSS Preprocessors, and Tailwind CSS. Skilled in front-end frameworks like React, TypeScript, and Bootstrap. Advanced in JavaScript, with expertise in DOM manipulation, `async/await`, closures, and understanding V8 engine internals like the call stack, memory management, and event loop.",
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ export const featuresData = [
   {
     id: 6,
     icon: <FaLaptopCode />,
-    title: "Full Stack",
-    des: "",
+    title: "MERN Stack",
+    des: "Experienced in the MERN stack (MongoDB, Express.js, React, Node.js), building full-stack web applications with seamless client-server interaction. Skilled in React for creating dynamic and responsive front-end interfaces, leveraging its component-based architecture to deliver scalable and efficient solutions. Adept at integrating APIs and managing databases for robust back-end functionality.",
   }
 ];

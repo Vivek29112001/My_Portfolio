@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react';
 import Title from '../layouts/Title';
 import ContactLeft from './ContactLeft';
-// import emailjs from '@emailjs/browser';
 import emailjs from "@emailjs/browser";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -14,13 +14,11 @@ const Contact = () => {
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
 
-  // ========== Email Validation start here ==============
   const emailValidation = () => {
     return String(email)
       .toLocaleLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
-  // ========== Email Validation end here ================
 
   const handleSend = (e) => {
     e.preventDefault();
@@ -37,23 +35,39 @@ const Contact = () => {
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
-      // emailjs.send(serviceID, templateID, templateParams, publicKey);
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      const templateParams = {
+        from_name: username,
+        to_name: '2911vivek@gmail.com',
+        phone_number: phoneNumber,
+        from_email: email,
+        subject: subject,
+        message: message
+      };
+  
+      emailjs.send('your_serviceID', 'your_templateID', templateParams, 'your_publicKey')
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          toast.success(`Thank you dear ${username}, Your Message has been sent Successfully!`);
+          setSuccessMsg(
+            `Thank you dear ${username}, Your Message has been sent Successfully!`
+          );
+          setErrMsg("");
+          setUsername("");
+          setPhoneNumber("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        }, (error) => {
+          console.log('FAILED...', error);
+          toast.error("Failed to send the message, please try again.");
+          setErrMsg("Failed to send the message, please try again.");
+        });
     }
   };
+  
+
   return (
-    <section
-      id="contact"
-      className="w-full py-20 border-b-[1px] border-b-black"
-    >
+    <section id="contact" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
         <Title title="CONTACT" des="Contact With Me" />
       </div>
@@ -80,10 +94,7 @@ const Contact = () => {
                   <input
                     onChange={(e) => setUsername(e.target.value)}
                     value={username}
-                    className={`${
-                      errMsg === "Username is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
+                    className={`${errMsg === "Username is required!" && "outline-designColor"} contactInput`}
                     type="text"
                   />
                 </div>
@@ -94,10 +105,7 @@ const Contact = () => {
                   <input
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     value={phoneNumber}
-                    className={`${
-                      errMsg === "Phone number is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
+                    className={`${errMsg === "Phone number is required!" && "outline-designColor"} contactInput`}
                     type="text"
                   />
                 </div>
@@ -109,10 +117,7 @@ const Contact = () => {
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
-                  className={`${
-                    errMsg === "Please give your Email!" &&
-                    "outline-designColor"
-                  } contactInput`}
+                  className={`${errMsg === "Please give your Email!" && "outline-designColor"} contactInput`}
                   type="email"
                 />
               </div>
@@ -123,10 +128,7 @@ const Contact = () => {
                 <input
                   onChange={(e) => setSubject(e.target.value)}
                   value={subject}
-                  className={`${
-                    errMsg === "Plese give your Subject!" &&
-                    "outline-designColor"
-                  } contactInput`}
+                  className={`${errMsg === "Plese give your Subject!" && "outline-designColor"} contactInput`}
                   type="text"
                 />
               </div>
@@ -137,9 +139,7 @@ const Contact = () => {
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
-                  className={`${
-                    errMsg === "Message is required!" && "outline-designColor"
-                  } contactTextArea`}
+                  className={`${errMsg === "Message is required!" && "outline-designColor"} contactTextArea`}
                   cols="30"
                   rows="8"
                 ></textarea>
@@ -166,8 +166,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 }
 
-export default Contact
+export default Contact;
