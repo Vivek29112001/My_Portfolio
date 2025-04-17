@@ -4,7 +4,7 @@ import Media from './Media';
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Javascript.", "React.", "Front-End.", "Mern Stack.", "Full Stack .", "Web-Developer.", "Python.", "TypeScript."],
+    words: ["Javascript.", "React.", "Front-End.","Next.JS.", "Mern Stack.", "Full Stack .", "Web-Developer.",  "TypeScript.", "Python.",],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -27,9 +27,11 @@ const LeftBanner = () => {
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
           {/* I am a passionate and aspiring front-end developer with a keen interest in Python, MERN stack, and React. As a fresher in the world of tech, I am excited to embark on a journey of continuous learning and professional growth. */}
-          Software Engineer skilled in MERN stack development with experience in mobile and web applications, including work
-          at Jio Platforms and Coding Ninjas. Proven ability to enhance user engagement through responsive, user-focused
-          applications. Certified in advanced web development and React, with strong collaborative and teaching skills
+          Software Developer at Jio | 2 Years in IT | Skilled in MERN Stack, JavaScript, React, and Node.js . Fast learner
+          with expertise in AI-driven development and building scalable web and mobile applications. As a front-end
+          developer on Jio Platforms, you enhanced user experiences while mentoring students as a Teaching Assistant at
+          Coding Ninjas. Certified in advanced web development and React, currently serving notice period, and eager to
+          contribute to innovative projects.
         </p>
       </div>
       {/* Media */}

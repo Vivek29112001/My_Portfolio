@@ -3,13 +3,13 @@ import { bannerImg } from "../../assets/index";
 
 const RightBanner = () => {
   return (
-    <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
+    <div className="w-full lgl:w-1/2 flex justify-center items-center relative overflow-hidden">
       <img
-        className="w-[500px] h-[400px] lgl:w-[800px] lgl:h-[680px] z-10"
+        className="z-20 rounded-xl shadow-2xl transform hover:scale-110 transition duration-500 ease-in-out hover:brightness-110"
         src={bannerImg}
         alt="bannerImg"
       />
-      <div className="absolute bottom-0 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center"></div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-[#1e2024] via-[#202327] to-[#1e2024] opacity-50 blur-md animate-pulse"></div>
     </div>
   );
 }
