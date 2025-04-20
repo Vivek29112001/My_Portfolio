@@ -7,81 +7,63 @@ const Certificate = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="py-12 font-titleFont flex gap-20"
+      className="py-12 font-titleFont flex flex-col md:flex-row gap-8 md:gap-12 px-4"
     >
-      <div>
-        <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-        <ResumeCard
-            title="Advance Front-End Web Development with React - Full Stack . "
-            subTitle="Full Stack."
+      {/* Left Column */}
+      <div className="w-full md:w-1/2">
+        <div className="mt-14 w-full min-h-[400px] border-l-4 border-l-black border-opacity-30 flex flex-col gap-8">
+          <ResumeCard
+            title="Advance Front-End Web Development with React - Full Stack"
+            subTitle="Full Stack"
             result="Coding Ninjas"
-            des="🚀 Excited to share my Certificate of Excellence in Advanced Front End with React JS - Full Stack! 🌐 Scored 93.5% based on project and task evaluations.
-             🏆 Let's connect for innovative collaborations! 🔗 #ReactJS #FullStack #TechExcellence
-            This certificate signifies proficiency in Advance Front-End Web Development with React and practical application through the completion of major-project and various projects ."
+            des="🚀 Excited to share my Certificate of Excellence in Advanced Front-End with React JS - Full Stack! Scored 93.5% based on project and task evaluations. Let's connect for innovative collaborations! This certificate signifies proficiency in advanced front-end development with React through major projects and various tasks."
           />
           <ResumeCard
-            title="Front-End. "
-            subTitle="MERN Stack."
+            title="Front-End"
+            subTitle="MERN Stack"
             result="Coding Ninjas"
-            des="Coding Ninjas Front End Web Development Completion Certificate includes:
-            HTML, CSS, and JavaScript Concepts.
-            AJAX and jQuery usage.
-            Completion of mini project.
-            Completion of numerous tasks and assignments.
-            This certificate signifies proficiency in front-end web development technologies and practical application through the completion of a mini-project and various tasks."
+            des="Coding Ninjas Front-End Web Development Completion Certificate covering HTML, CSS, JavaScript, AJAX, and jQuery. Demonstrates proficiency through completion of mini projects and various assignments."
           />
           <ResumeCard
-            title="Back-End."
-            subTitle="MERN Stack."
+            title="Back-End"
+            subTitle="MERN Stack"
             result="Coding Ninjas"
-            des="Back End Web Development Certificate: Node.js, Express.js, MongoDB.
-            Excellence Certificate: Outstanding performance in the course.
-            Major Project: Successfully completed a significant project.
-            Proficiency in Node.js: Server-side JavaScript expertise.
-            Express.js: Skill in building web applications with Express.js.
-            MongoDB: Knowledge of working with MongoDB.
-            Task Completion: Completed various assignments.
-            Strong Back End Skills: Proficient in creating efficient server-side applications."
+            des="Back-End Web Development Certificate covering Node.js, Express.js, and MongoDB. Awarded for outstanding performance and project accomplishment, reinforcing strong server-side skills."
           />
           <ResumeCard
-            title="Web Development."
-            subTitle="Development."
+            title="Web Development"
+            subTitle="Development"
             result="Internshala"
-            des="Web Development Course on Internshala
-            Focus on Front-End Development
-            Includes Various Tasks/Projects
-            Comprehensive Learning Experience"
+            des="Web Development Course on Internshala focused on front-end development with projects and tasks for a comprehensive learning experience."
           />
-          
         </div>
       </div>
-      <div>
-        <div className="mt-12 w-full h-[1200px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          
+
+      {/* Right Column */}
+      <div className="w-full md:w-1/2">
+        <div className="mt-12 w-full min-h-[400px] border-l-4 border-l-black border-opacity-30 flex flex-col gap-8">
           <ResumeCard
-            title="Python Programming."
-            subTitle="Programming."
+            title="Python Programming"
+            subTitle="Programming"
             result="Coding Ninjas"
-            des="Python programming with DSA (Data Structures and Algorithms) completion and excellence certificate.
-            // Lots of questions and concepts covered.  The course likely covers various topics and concepts related to Python and DSA, and upon successful completion, you receive an excellence certificate. Additionally, there are numerous questions and concepts included in the course."
+            des="Certificate in Python Programming with DSA. This certification covers a wide range of questions and concepts, building a strong foundation in Python and data structures."
           />
           <ResumeCard
             title="Agile Project Management"
-            subTitle="Project Management."
+            subTitle="Project Management"
             result="Google Certificate"
-            des="Agile Project Management certification from Google with a 90% score! 🌐 Equipped with the latest methodologies"
+            des="Agile Project Management certification from Google with a 90% score. Equips you with the latest methodologies for effective project management."
           />
           <ResumeCard
-            title="Crash course on python ."
-            subTitle="Programming."
+            title="Crash Course on Python"
+            subTitle="Programming"
             result="Coursera"
-            des="Crash Course on Python is a beginner-level course that provides a quick and practical introduction to Python programming. The course covers essential concepts and programming techniques in Python."
+            des="A beginner-level crash course on Python providing a practical introduction to core programming concepts and techniques."
           />
           <ResumeCard
-            title="Digital Marketing."
-            // subTitle="Lorem ipsum dolor sit amet alternative."
+            title="Digital Marketing"
             result="Google"
-            des="Google offers digital marketing services."
+            des="Digital Marketing course by Google that covers comprehensive marketing strategies, hands-on projects, and practical insights into the digital landscape."
           />
         </div>
       </div>

@@ -6,7 +6,7 @@ const Skills = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
+      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-10"
     >
       {/* Programming Languages */}
       <div className="w-full lgl:w-1/2">
@@ -15,7 +15,7 @@ const Skills = () => {
           <h2 className="text-3xl md:text-4xl font-bold">Programming Languages</h2>
         </div>
         <div className="mt-14 w-full flex flex-col gap-6">
-          <div className="overflow-hidden">
+          <div className="overflow-hidden relative">
             <p className="text-sm uppercase font-medium text-gray-300">JavaScript</p>
             <span className="w-full h-2 bg-gray-700 bg-opacity-30 rounded-md inline-flex mt-2 relative">
               <motion.span

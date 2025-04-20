@@ -14,14 +14,12 @@ const Resume = () => {
   const [achievementData, setAchievementData] = useState(false);
 
   const handleTabClick = (section) => {
-    // Resetting all tabs first
     setExperienceData(false);
     setEducationData(false);
     setSkillData(false);
     setCertificateData(false);
     setAchievementData(false);
 
-    // Activate the selected tab
     if (section === "experience") setExperienceData(true);
     if (section === "education") setEducationData(true);
     if (section === "skills") setSkillData(true);
@@ -38,29 +36,32 @@ const Resume = () => {
 
   return (
     <section id="resume" className="w-full py-20 border-b border-gray-800 bg-gradient-to-b from-gray-900 to-black">
-      <div className="flex flex-col items-center justify-center mb-12">
+      <div className="flex flex-col items-center justify-center mb-12 px-4">
         <Title title="Software Engineer" des="My Resume" />
       </div>
-      <div className="w-full max-w-5xl mx-auto">
-        <ul className="flex justify-center space-x-4 border-b border-gray-700 mb-8">
-          <li onClick={() => handleTabClick("experience")} className={tabClass(experienceData)}>
-            Experience
-          </li>
-          <li onClick={() => handleTabClick("education")} className={tabClass(educationData)}>
-            Education
-          </li>
-          <li onClick={() => handleTabClick("skills")} className={tabClass(skillData)}>
-            Professional Skills
-          </li>
-          <li onClick={() => handleTabClick("certificate")} className={tabClass(certificateData)}>
-            Certificates
-          </li>
-          <li onClick={() => handleTabClick("achievement")} className={tabClass(achievementData)}>
-            Achievements
-          </li>
-        </ul>
+      <div className="w-full max-w-5xl mx-auto px-4">
+        {/* Wrap tabs in an overflow container for smaller screens */}
+        <div className="overflow-x-auto">
+          <ul className="flex justify-center items-center space-x-4 border-b border-gray-700 mb-8 whitespace-nowrap">
+            <li onClick={() => handleTabClick("experience")} className={tabClass(experienceData)}>
+              Experience
+            </li>
+            <li onClick={() => handleTabClick("education")} className={tabClass(educationData)}>
+              Education
+            </li>
+            <li onClick={() => handleTabClick("skills")} className={tabClass(skillData)}>
+              Professional Skills
+            </li>
+            <li onClick={() => handleTabClick("certificate")} className={tabClass(certificateData)}>
+              Certificates
+            </li>
+            <li onClick={() => handleTabClick("achievement")} className={tabClass(achievementData)}>
+              Achievements
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="w-full max-w-5xl mx-auto">
+      <div className="w-full max-w-5xl mx-auto px-4">
         {experienceData && <Experience />}
         {educationData && <Education />}
         {skillData && <Skills />}

@@ -62,7 +62,7 @@ const Projects = () => {
       id="projects"
       className="w-full py-20 border-b border-gray-800 bg-gradient-to-b from-gray-900 via-black to-gray-900"
     >
-      <div className="flex flex-col items-center text-center mb-12">
+      <div className="flex flex-col items-center text-center mb-12 px-4">
         <Title title="VISIT MY PORTFOLIO" des="My Projects" />
         <a
           href="https://github.com/Vivek29112001"
@@ -74,7 +74,7 @@ const Projects = () => {
         </a>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12 px-6 transition-all duration-500">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 px-4 md:px-6 transition-all duration-500">
         {visibleProjects.map((project, index) => (
           <ProjectsCard
             key={index}
@@ -85,7 +85,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 px-4">
         <button
           onClick={() => setShowAll((prev) => !prev)}
           className="flex items-center justify-center gap-2 px-6 py-3 bg-purple-700 hover:bg-purple-800 text-white text-lg rounded-full shadow-lg transition duration-300"

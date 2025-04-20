@@ -41,9 +41,6 @@ const Card = ({ item: { title, des, icon } }) => {
                 </span>
               )}
             </p>
-            <span className="text-2xl text-designColor">
-              <HiArrowRight />
-            </span>
           </div>
         </div>
       </div>
