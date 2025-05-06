@@ -12,6 +12,7 @@ import projectDaksh from "../../assets/images/projects/projectDaksh.png";
 import mealmingle from "../../assets/images/projects/mealmingle.png";
 import { BsGithub } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
+import Chatflix from "../../assets/images/projects/chatflix.jpeg";
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
@@ -21,6 +22,12 @@ const Projects = () => {
       title: "Daksha.AI",
       des: "Developed a Next.js web app with AI-driven tools for job preparation, featuring an AI Resume Builder, Mock Interview UI, performance tracking, and PDF resume downloads.",
       src: projectDaksh,
+    },
+    {
+      title:"🎬 CHATFLIX ",
+      des:"AI-powered streaming built with React , Redux & Firebase.Smart recommendations. Seamless experience.",
+      src:Chatflix,
+
     },
     {
       title: "Meal Mingle",
@@ -60,17 +67,17 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 border-b border-gray-800 bg-gradient-to-b from-gray-900 via-black to-gray-900"
+      className="w-full py-10 border-b border-gray-800 bg-gradient-to-b from-gray-900 via-black to-gray-900"
     >
-      <div className="flex flex-col items-center text-center mb-12 px-4">
+      <div className="flex flex-col items-center text-center mb-2 px-4">
         <Title title="VISIT MY PORTFOLIO" des="My Projects" />
         <a
           href="https://github.com/Vivek29112001"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-lg w-12 h-12 rounded-full bg-gray-800 inline-flex justify-center items-center text-gray-400 hover:text-purple-500 hover:bg-gray-700 duration-300 cursor-pointer shadow-md"
+          className="text-lg rounded-full inline-flex justify-center items-center text-gray-400 hover:text-purple-500 hover:bg-gray-700 duration-300 cursor-pointer shadow-md"
         >
-          <BsGithub />
+          <BsGithub className="text-designColor w-10 h-20"/>
         </a>
       </div>
 
